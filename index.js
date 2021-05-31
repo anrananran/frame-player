@@ -3,7 +3,7 @@
  * 1.支持循环播放
  * 2.支持反向播放
  * 3.支持图片预加载
- * 4.仅支持横向排布（可多行）的雪碧图
+ * 4.支持横向排布（可多行）或纵向排布（可多列）的雪碧图
  */
 export default class FramePlayer {
   /**
@@ -123,7 +123,7 @@ export default class FramePlayer {
     canvas.style.height = '100%'
     canvas.style.display = 'block'
     this.ctx = canvas.getContext('2d')
-    $(this.container).html(canvas)
+    document.querySelector(this.container).innerHTML = canvas
     this.canvas = canvas
   }
 
