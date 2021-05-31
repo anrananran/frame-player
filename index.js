@@ -7,7 +7,7 @@
  */
 export default class FramePlayer {
   /**
-   * @param {HTMLElement} container DOM容器
+   * @param {String} container DOM选择器
    * @param {String|HTMLElement} image 图片元素或路径
    * @param {Number} width 序列帧宽度
    * @param {Number} height 序列帧高度
